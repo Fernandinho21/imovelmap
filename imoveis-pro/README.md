@@ -1,70 +1,27 @@
-# Imóveis Pro
+# 🏠 ImovelMap
 
-Plataforma completa de gestão imobiliária com frontend e backend separados.
+Sistema web para corretores e proprietarios gerenciarem imoveis com mapa interativo.
 
-## Estrutura do Projeto
+## ✨ Funcionalidades
+- 🗺️ Mapa Interativo com OpenStreetMap
+- 📝 Cadastro de imoveis com validacao
+- 📸 Upload de fotos com preview
+- 🔍 Busca por cidades e bairros
+- 🎯 Filtros por tipo, preco, area e comodidades
+- 👤 Corretor opcional
+- 📱 Responsivo
 
-```
-imoveis-pro/
-├── frontend/          # Interface web
-├── backend/          # API REST
-└── README.md
-```
+## 🚀 Tecnologias
+- HTML5, CSS3, JavaScript
+- Leaflet.js (mapa)
+- Nominatim API (busca)
+- Node.js + Express (backend)
+- SQLite (banco de dados)
 
-## Como Começar
-
-### Backend
-
+## 📦 Instalacao
 ```bash
-cd backend
+git clone https://github.com/Fernandinho21/imovelmap.git
+cd imovelmap/backend
 npm install
-npm run dev
+npm start
 ```
-
-Servidor rodará em `http://localhost:3000`
-
-### Frontend
-
-```bash
-cd frontend
-# Abrir index.html no navegador
-```
-
-Será feita requisição para `http://localhost:3000/api`
-
-## Tecnologias
-
-### Frontend
-- HTML5, CSS3, JavaScript Vanilla
-- Leaflet (Mapa)
-- Fetch API
-
-### Backend
-- Node.js + Express
-- MongoDB + Mongoose
-- Multer (Upload de fotos)
-
-## Funcionalidades
-
-✅ Listagem de imóveis  
-✅ Cadastro de imóveis  
-✅ Upload de fotos  
-✅ Filtros avançados  
-✅ Busca de imóveis  
-✅ Mapa interativo  
-✅ Validação de dados  
-✅ Responsivo para mobile  
-
-## Endpoints da API
-
-- `GET /api/imoveis` - Listar imóveis
-- `GET /api/imoveis/:id` - Detalhes do imóvel
-- `POST /api/imoveis` - Criar imóvel
-- `PUT /api/imoveis/:id` - Atualizar imóvel
-- `DELETE /api/imoveis/:id` - Deletar imóvel
-- `GET /api/imoveis/busca?termo=valor` - Buscar imóveis
-- `GET /health` - Status do servidor
-
-## Licença
-
-MIT
